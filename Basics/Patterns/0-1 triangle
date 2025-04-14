@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String []args)
+    {
+        //binary code
+        int n;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter n");
+        int binary=1;
+        n=sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(binary+" ");
+                if(binary==1)
+                    binary=0;
+                else
+                    binary=1;
+            }
+            System.out.println("");
+        }
+
+    }
+}
